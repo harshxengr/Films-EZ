@@ -2,7 +2,9 @@ import React from 'react'
 
 const Portfolio = () => {
   return (
-    <div>Portfolio</div>
+    <section className='min-h-screen w-full bg-pink-300'>
+
+    </section>
   )
 }
 
