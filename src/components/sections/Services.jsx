@@ -5,31 +5,31 @@ import topDesign from '../../assets/common/topDesign.png'
 import vector5 from '../../assets/common/Vector 5.svg'
 import frame33 from '../../assets/common/Frame 33.svg'
 
-const Services = () => {
-  const cards = [
-    {
-      title: "Film Production",
-      img: filmProductionImg,
-      rot: "6deg",
-      barRot: "-8deg",
-      mobileRot: "3deg",
-    },
-    {
-      title: "Branding",
-      img: brandingImg,
-      rot: "0deg",
-      barRot: "4deg",
-      mobileRot: "0deg",
-    },
-    {
-      title: "Art Curation",
-      img: artCurationImg,
-      rot: "-6deg",
-      barRot: "32deg",
-      mobileRot: "-3deg",
-    }
-  ];
+const cards = [
+  {
+    title: "Film Production",
+    img: filmProductionImg,
+    rot: "6deg",
+    barRot: "-8deg",
+    mobileRot: "3deg",
+  },
+  {
+    title: "Branding",
+    img: brandingImg,
+    rot: "0deg",
+    barRot: "4deg",
+    mobileRot: "0deg",
+  },
+  {
+    title: "Art Curation",
+    img: artCurationImg,
+    rot: "-6deg",
+    barRot: "32deg",
+    mobileRot: "-3deg",
+  }
+];
 
+const Services = () => {
   return (
     <section id='services' className="relative min-h-screen w-full py-6 sm:py-10 overflow-hidden">
       <div className='absolute bottom-0 w-full z-0'>
@@ -52,13 +52,14 @@ const Services = () => {
         <div className="relative w-full flex flex-col sm:flex-row items-center sm:items-end justify-center gap-8 sm:gap-6 md:gap-10 lg:gap-16 py-8 sm:py-12 lg:py-20 px-2 sm:px-4">
           {cards.map((c, i) => (
             <div
-              className="relative shadow-2xl bg-white w-full max-w-[280px] sm:max-w-60 md:max-w-[280px] lg:max-w-[320px] py-3 px-4 transition-transform duration-300 hover:scale-105"
               key={c.title}
+              className="relative transition-transform duration-300 hover:scale-105"
               style={{
                 transform: `rotate(${window.innerWidth < 640 ? c.mobileRot : c.rot})`,
                 marginTop: c.title === "Branding" ? (window.innerWidth < 640 ? '0' : '20px') : '0'
               }}
             >
+
               <div
                 className="absolute -top-8 sm:-top-10 md:-top-12 z-10 w-32 sm:w-40 md:w-48 lg:w-52"
                 style={{
@@ -72,15 +73,12 @@ const Services = () => {
                         : '90%'
                 }}
               >
-                <img
-                  src={topDesign}
-                  alt=""
-                  className='w-full h-full object-contain'
-                />
+                <img src={topDesign} alt="" className="w-full h-full object-contain" />
               </div>
 
-              <div className="relative z-0 w-full h-full flex flex-col items-center gap-3 sm:gap-4">
-                <div className="w-full h-60 sm:h-[260px] md:h-[280px] lg:h-80 bg-gray-100 overflow-hidden">
+              <div className="bg-white shadow-2xl border border-gray-200 p-4 w-full max-w-[280px] sm:max-w-60 md:max-w-[280px] lg:max-w-[320px] flex flex-col items-center">
+
+                <div className="w-full h-64 sm:h-[260px] md:h-[280px] lg:h-80 bg-gray-100 overflow-hidden">
                   <img
                     src={c.img}
                     alt={c.title}
@@ -88,13 +86,14 @@ const Services = () => {
                   />
                 </div>
 
-                <div className="font-[Halant] text-base sm:text-lg md:text-xl text-center text-gray-800 font-medium pb-2">
+                <div className="mt-3 text-center font-[Halant] text-base sm:text-lg md:text-xl text-gray-900 font-medium">
                   {c.title}
                 </div>
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   )

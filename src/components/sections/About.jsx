@@ -29,16 +29,16 @@ const About = () => {
     <section className='min-h-screen w-full grid grid-cols-1 lg:grid-cols-2'>
 
       <div className='flex flex-col justify-between gap-12 px-4 py-12 lg:py-20 lg:pl-20 mt-20 items-center'>
-        <h2 className="text-2xl lg:text-3xl font-serif font-normal text-[#252729] text-center tracking-normal">
+        <h2 className="text-2xl lg:text-3xl font-[Halant] font-normal text-[#252729] text-center tracking-normal">
           A montage of familiar faces and names.
         </h2>
-        <p className="text-md lg:text-lg w-[80%] lg:w-[60%] font-sans font-normal text-[#252729] text-center leading-6 mb-12">
+        <p className="text-md lg:text-lg w-[80%] lg:w-[60%] font-[Instrument_Sans] font-normal text-[#252729] text-center leading-6 mb-12">
           Some stories come from the biggest names.<br />
           Others begin with bold, rising voices.<br />
           We’ve been fortunate to walk alongside both – listening, creating, and building stories that matter.
         </p>
 
-        <div className='w-full flex flex-wrap sm:flex-nowrap justify-center items-center gap-4 sm:gap-0 mt-6 md:mt-10 lg:mt-12'>
+        <div className='w-full flex flex-wrap sm:flex-nowrap justify-center items-center gap-4 sm:gap-0 md:mt-10 lg:mt-12'>
           {card.map((item, index) => (
             <div
               key={item.id}
@@ -69,9 +69,9 @@ const About = () => {
 
 
       </div>
-      <div className='grid grid-rows-2 gap-40'>
+      <div className='grid grid-rows-2 sm:gap-20 gap-30 md:gap-40 px-4 md:px-0'>
 
-        <h2 className=" text-2xl md:text-3xl lg:text-4xl mt-12 md:mt-24 mr-12 ml-6 font-[Island_Moments] font-normal leading-14 tracking-normal text-center text-[#0F3255]">
+        <h2 className=" text-2xl md:text-3xl lg:text-4xl mt-12 md:mt-24 md:mr-12 md:ml-6 font-[Island_Moments] font-normal leading-10 md:leading-14 tracking-normal text-center text-[#0F3255]">
           Every project is more than just a brief -
           <br />
           it&apos;s a new chapter waiting to be written.
@@ -80,11 +80,11 @@ const About = () => {
 
         <div className='relative'>
           <div className='absolute -bottom-20 right-0 z-0'>
-            <img src={group10} alt="" className='size-[620px]' />
+            <img src={group10} alt="" className='size-[500px] md:size-[620px]' />
           </div>
 
-          <div className='absolute -bottom-20 right-0 z-0'>
-            <img src={objects} alt="" className='size-[400px]' />
+          <div className='absolute -bottom-20  right-6 md:right-0 z-0'>
+            <img src={objects} alt="" className='size-[340px] md:size-[400px]' />
           </div>
         </div>
       </div>

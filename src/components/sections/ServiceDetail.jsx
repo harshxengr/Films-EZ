@@ -10,7 +10,7 @@ const ServiceDetail = () => {
                 <section
                     key={service.id}
                     id={service.id}
-                    className="relative w-full min-h-screen overflow-hidden snap-start"
+                    className="relative w-full min-h-screen py-12 px-6 md:px-16 lg:px-32 overflow-hidden snap-start"
                 >
 
                     <div className="absolute bottom-32 left-8 md:left-20 lg:left-30 w-12 h-12 md:w-20 md:h-20 opacity-70 pointer-events-none">
@@ -27,7 +27,7 @@ const ServiceDetail = () => {
                     </div>
 
 
-                    <div className="relative z-10 min-h-screen py-12 px-4 md:px-16 lg:px-32 flex flex-col justify-center">
+                    <div className="relative z-10 min-h-screen flex flex-col justify-center">
                         <div className="max-w-7xl mx-auto w-full">
 
                             <div className="text-center mb-12 flex flex-col justify-center items-center gap-1">
@@ -43,7 +43,7 @@ const ServiceDetail = () => {
                             {index === 0 && (
                                 <button
                                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                                    className="flex items-center text-center gap-2 cursor-pointer text-[#ff6a3a] hover:text-[#ff5a1d] transition-colors mb-8 lg:mb-12 group outline-2 rounded-full px-4 py-2"
+                                    className="flex items-center text-center gap-1 md:gap-2 cursor-pointer text-[#ff6a3a] hover:text-[#ff5a1d] transition-colors mb-8 lg:mb-12 group outline-2 rounded-full px-3 py-1 md:px-4 md:py-2"
                                 >
                                     <MdKeyboardArrowLeft className='size-6' />
                                     <span className="font-medium">Back</span>
@@ -53,23 +53,20 @@ const ServiceDetail = () => {
 
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 
-                                <div className='w-full flex items-center justify-center'>
-                                    <div className="relative z-0 h-90 w-80 py-2 px-4 flex flex-col items-center justify-center gap-3 sm:gap-4 bg-white shadow-xl">
-                                        <div className="overflow-hidden">
+                                <div className="flex flex-col items-center">
+                                    <div className="bg-white shadow-lg border border-gray-200 p-4">
+                                        <div className="w-64 h-80 overflow-hidden bg-gray-100">
                                             <img
                                                 src={service.image}
                                                 alt={service.title}
                                                 className="w-full h-full object-cover object-center"
                                             />
                                         </div>
-
-                                        <div className="font-[Halant] text-base sm:text-lg md:text-xl text-center text-gray-800 font-medium pb-2">
+                                        <div className="mt-3 text-center font-[Halant] text-xl text-gray-900">
                                             {service.title}
                                         </div>
                                     </div>
                                 </div>
-
-
 
                                 <div className="order-1 lg:order-2 space-y-6">
                                     <div className="text-[#252729] space-y-4">
@@ -91,9 +88,11 @@ const ServiceDetail = () => {
                                         </ul>
                                     </div>
 
-                                    <div className="pt-6">
+                                    <div className="w-full pt-6 flex items-center justify-center lg:justify-start">
                                         <button className="group flex flex-col items-center gap-3 text-[#252729] hover:text-[#ff6a3a] transition-colors">
-                                            <span className="text-base md:text-lg font-medium">Explore Now</span>
+                                            <span className="text-base md:text-lg font-medium">
+                                                Explore Now
+                                            </span>
                                             <img
                                                 src={exploreArrow}
                                                 alt="arrow"

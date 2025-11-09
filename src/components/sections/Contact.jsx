@@ -74,8 +74,8 @@ const Contact = () => {
       <div className="relative z-10 max-w-[1600px] mx-auto">
         <div className="px-4 md:px-16 lg:px-24 xl:px-40 py-32 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-36">
 
-          <div className="flex flex-col justify-center">
-            <p className="text-lg pr-2">
+          <div className="flex flex-col justify-center items-center">
+            <p className="text-lg font-[Instrument_Sans] text-center md:text-left">
               Whether you have an idea, a question, or simply want to explore how V can work together, V&apos;re just a message away.
               <br />
               Let&apos;s catch up over coffee. Great stories always begin with a good conversation
@@ -85,15 +85,14 @@ const Contact = () => {
           <div className="flex flex-col items-center">
 
             <h2
-              className="text-2xl lg:text-3xl mb-4"
-              style={{ color: '#333', fontFamily: "'Playfair Display', serif", fontWeight: 400 }}
+              className="text-2xl lg:text-3xl mb-4 font-[Halant]"
             >
               Join the Story
             </h2>
 
-            <p className="text-md lg:text-lg mb-8">Ready to bring your vision to life? Let's talk.</p>
+            <p className="text-md lg:text-lg mb-8 font-[Instrument_Sans]">Ready to bring your vision to life? Let's talk.</p>
 
-            <form onSubmit={handleSubmit} className="w-full flex flex-col gap-4">
+            <form onSubmit={handleSubmit} className="w-full flex flex-col gap-4  font-[Instrument_Sans]">
 
               <input
                 type="text"
@@ -139,7 +138,7 @@ const Contact = () => {
               </button>
             </form>
 
-            <div className="text-sm font-semibold text-[#F15D2B] mt-8">
+            <div className="w-full text-center text-xs md:text-sm font-semibold font-[Halant] text-[#F15D2B] mt-8">
               <a href="mailto:vernita@varnanfilms.co.in" className="hover:underline">
                 vernita@varnanfilms.co.in
               </a>

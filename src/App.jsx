@@ -9,7 +9,7 @@ import ServiceDetail from './components/sections/ServiceDetail'
 
 function App() {
   return (
-      <div className='flex flex-col items-center gap-4 md:gap-8 lg:gap-12'>
+      <div className='flex flex-col items-center'>
         <Navbar />
         <Hero />
         <AboutTeam />

@@ -9,19 +9,19 @@ import rectangleWhite from '../../assets/common/Rectangle 44.png'
 
 const Portfolio = () => {
   return (
-    <section id='portfolio' className="relative w-full min-h-screen overflow-hidden">
+    <section id='portfolio' className="relative w-full md:min-h-screen overflow-hidden">
       <div className="absolute bottom-[25%] left-0 pointer-events-none opacity-85 z-0">
-        <img src={camGroup} alt="" className="size-[400px]" />
+        <img src={camGroup} alt="" className="size-[300px] md:size-[400px]" />
       </div>
-      <div className="absolute bottom-0 right-21 pointer-events-none opacity-85 z-0">
+      <div className="absolute bottom-0 right-32 md:right-21 pointer-events-none opacity-85 z-0">
         <img src={bottomRightImg} alt="" className="size-[400px]" />
       </div>
 
-      <div className='min-h-screen py-12 px-4'>
-        <div className="h-full mx-auto flex flex-col gap-16 justify-between items-center">
+      <div className='md:min-h-screen py-12 px-4'>
+        <div className="h-full mx-auto flex flex-col gap-8 md:gap-16 justify-between items-center">
           <div className="text-center text-[#252729]">
-            <h2 className="text-3xl font-serif mb-4">The Highlight Reel</h2>
-            <p className="text-lg md:text-xl text-[#555]">Watch the magic we've captured.</p>
+            <h2 className="text-3xl font-[Halant] mb-4">The Highlight Reel</h2>
+            <p className="text-lg md:text-xl text-[#555] font-[Instrument_Sans]">Watch the magic we've captured.</p>
           </div>
 
           <div className="w-full mx-auto flex items-center justify-center">
@@ -30,10 +30,10 @@ const Portfolio = () => {
                 className="absolute left-0 top-1/2 -translate-y-1/2 z-30"
                 aria-label="Previous video"
               >
-                <img src={leftArrow} alt="" className='size-20 cursor-pointer' />
+                <img src={leftArrow} alt="" className='size-10 md:size-20 cursor-pointer' />
               </button>
 
-              <div className='relative w-[640px] h-[400px]'>
+              <div className='relative md:w-[640px] h-[400px]'>
                 <img
                   src={subtractImg}
                   alt="Film strip frame"
@@ -53,20 +53,18 @@ const Portfolio = () => {
                       aria-label="Play video"
                     >
                       <div className="cursor-pointer transition-all rounded-full flex items-center justify-center group-hover:scale-110 duration-300 shadow-xl">
-                        <FaYoutube className="text-red-700 text-6xl" />
+                        <FaYoutube className="text-red-700 text-3xl md:text-6xl" />
                       </div>
                     </button>
                   </div>
                 </div>
               </div>
 
-              {/* <img src={rectangleWhite} alt="" className='absolute top-0 right-0 z-20  w-[70px] h-[200px] bg-amber-200'/> */}
-              
               <button
                 className="absolute right-0 top-1/2 -translate-y-1/2 z-30"
                 aria-label="Next video"
               >
-                <img src={rightArrow} alt="" className='size-20 cursor-pointer ' />
+                <img src={rightArrow} alt="" className='size-10 md:size-20 cursor-pointer ' />
               </button>
             </div>
           </div>
