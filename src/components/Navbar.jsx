@@ -38,7 +38,7 @@ const Navbar = () => {
 
             <a
               href="#contact"
-              className="group relative inline-flex items-center gap-2 rounded-full bg-[#f15d2b] px-4 py-3 text-sm  text-white shadow-[0px_12px_30px_rgba(241,93,43,0.25)] transition-transform hover:-translate-y-[2px]"
+              className="group relative inline-flex items-center gap-2 rounded-full bg-[#f15d2b] px-4 py-3 text-sm  text-white shadow-[0px_12px_30px_rgba(241,93,43,0.25)] transition-transform hover:-translate-y-0.5"
             >
               Let&apos;s Talk
               <span className="relative block size-4 overflow-visible">

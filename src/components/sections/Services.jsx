@@ -1,6 +1,6 @@
-import filmProductionImg from '../../assets/common/ServiceImg1.png'
-import brandingImg from '../../assets/common/ServiceImg2.png'
-import artCurationImg from '../../assets/common/ServiceImg3.png'
+import filmProductionImg from '../../assets/services/ServiceImg1.png'
+import brandingImg from '../../assets/services/ServiceImg2.png'
+import artCurationImg from '../../assets/services/ServiceImg3.png'
 import topDesign from '../../assets/common/topDesign.png'
 import vector5 from '../../assets/common/Vector 5.svg'
 import frame33 from '../../assets/common/Frame 33.svg'
@@ -31,7 +31,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="relative min-h-screen w-full py-6 sm:py-10 overflow-hidden">
+    <section id='services' className="relative min-h-screen w-full py-6 sm:py-10 overflow-hidden">
       <div className='absolute bottom-0 w-full z-0'>
         <img src={frame33} alt="" className='w-full h-auto' />
       </div>

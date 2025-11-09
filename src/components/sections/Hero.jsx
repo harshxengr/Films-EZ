@@ -3,7 +3,7 @@ import logo from '../../assets/common/logo.svg'
 
 const Hero = () => {
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-16 xl:px-28 2xl:px-32 py-12 md:py-16 lg:py-20">
+    <section className="relative w-full min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-16 xl:px-28 2xl:px-32 py-12 md:py-16 lg:py-20 mt-8 md:mt-8 lg:mt-12">
       <div className="w-full max-w-[1600px] grid grid-cols-1 lg:grid-cols-[45%_55%] gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-center">
 
         <div className="relative flex items-center justify-center lg:justify-start order-1 lg:order-1">
@@ -25,7 +25,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 sm:space-y-8 md:space-y-10 lg:space-y-12 order-2 lg:order-2 px-4 sm:px-6">
+        <div className="flex flex-col items-center text-center space-y-6 sm:space-y-8 md:space-y-10 lg:space-y-12 order-2 lg:order-2 px-4 sm:px-6">
 
           <div className="flex flex-col items-center w-full">
             <h1 
@@ -48,7 +48,7 @@ const Hero = () => {
             Films . Brands . Art
           </div>
 
-          <div className="max-w-full w-full sm:max-w-[450px] md:max-w-[500px] lg:max-w-[520px] xl:max-w-[550px]">
+          <div className="max-w-full sm:max-w-[450px] md:max-w-[500px] lg:max-w-[520px] xl:max-w-[550px]">
             <p 
               className="text-sm sm:text-base md:text-base lg:text-md xl:text-lg leading-relaxed sm:leading-[1.6] md:leading-[1.7] text-center"
               style={{ 

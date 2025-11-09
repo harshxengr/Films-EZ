@@ -52,7 +52,11 @@ const AboutTeam = () => {
 
           <div className="mt-16">
             <h3 className="text-2xl md:text-3xl font-serif text-[#3d2f2b] mb-6">Take a closer look at the stories V bring to life.</h3>
-            <button className="inline-block bg-[#ff6a3a] text-white px-4 py-2 rounded-full shadow-md hover:bg-[#ff5a1d] transition cursor-pointer">View Portfolio</button>
+            <a href="#portfolio">
+              <button className="inline-block bg-[#ff6a3a] text-white px-4 py-2 rounded-full shadow-md hover:bg-[#ff5a1d] transition cursor-pointer">
+                Portfolio
+              </button>
+            </a>
           </div>
         </div>
       </div>
