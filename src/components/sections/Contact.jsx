@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import bottomLeft from '../assets/common/Footer Vector (1).svg'
-import topRight from '../assets/common/Footer Vector.svg'
+import bottomLeft from '../../assets/common/Footer Vector (1).svg'
+import topRight from '../../assets/common/Footer Vector.svg'
 
 const Contact = () => {
 

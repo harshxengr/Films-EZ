@@ -1,19 +1,29 @@
-import group10 from '../assets/common/Group 10.svg'
-import objects from '../assets/common/OBJECTS.svg'
-import cardBg from '../assets/common/cardBg.png'
+import group10 from '../../assets/common/Group 10.svg'
+import objects from '../../assets/common/OBJECTS.svg'
+import cardBg from '../../assets/common/cardBg.png'
 
-const card = [{
-  "name": "Projects",
-  "number": "85+"
-},
-{
-  "name": "Happy Clients",
-  "number": "50+"
-},
-{
-  "name": "Experts Team",
-  "number": "10+"
-}]
+
+const card = [
+  {
+    "id": 1,
+    "name": "Projects",
+    "number": "85+",
+    "rotation": "6deg"
+  },
+  {
+    "id": 2,
+    "name": "Happy Clients",
+    "number": "50+",
+    "rotation": "6deg"
+  },
+  {
+    "id": 3,
+    "name": "Experts Team",
+    "number": "10+",
+    "rotation": "6deg"
+  }
+]
+
 
 const About = () => {
   return (
@@ -29,28 +39,35 @@ const About = () => {
           We’ve been fortunate to walk alongside both – listening, creating, and building stories that matter.
         </p>
 
-        <div className='w-full flex justify-center items-center'>
-          {card.map((i) => (
+        <div className='w-full flex flex-wrap sm:flex-nowrap justify-center items-center gap-4 sm:gap-0 mt-6 md:mt-10 lg:mt-12'>
+          {card.map((item, index) => (
             <div
-              key={i.id}
-              className='rotate-8 size-40 md:size-60 flex flex-col items-center justify-center gap-6 shadow-lg'
+              key={item.id}
+              className='relative flex flex-col items-center justify-center gap-3 sm:gap-4 md:gap-5 shadow-xl transition-all duration-300 ease-in-out hover:scale-105 hover:z-20 hover:shadow-2xl
+                  w-32 h-32 
+                  sm:w-36 sm:h-36 
+                  md:w-44 md:h-44 
+                  lg:w-48 lg:h-48 
+                  xl:w-52 xl:h-52'
               style={{
                 backgroundImage: `url(${cardBg})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
-                color: ''
+                transform: `rotate(${item.rotation})`,
+                marginLeft: index > 0 ? '-1.5rem' : '0',
               }}
             >
-              <h1 className='font-semibold font-[Instrument_Sans] text-5xl text-[#233049]'>
-                {i.number}
+              <h1 className='font-semibold font-[Instrument_Sans] text-3xl md:text-5xl lg:text-6xl text-[#233049] leading-none'>
+                {item.number}
               </h1>
-              <p className='text-[#F15D2B] font-[Instrument_Sans] text-xl'>
-                {i.name}
+              <p className='text-[#F15D2B] font-[Instrument_Sans] text-[clamp(0.75rem,2.5vw+0.25rem,0.875rem)] sm:text-[clamp(0.8125rem,2.25vw+0.25rem,0.9375rem)] md:text-[clamp(0.875rem,2vw+0.25rem,1rem)] lg:text-[clamp(0.9375rem,1.75vw+0.25rem,1.0625rem)] xl:text-[clamp(1rem,1.5vw+0.25rem,1.125rem)] text-center px-2 leading-tight font-medium'>
+                {item.name}
               </p>
             </div>
           ))}
         </div>
+
 
       </div>
       <div className='grid grid-rows-2 gap-40'>
