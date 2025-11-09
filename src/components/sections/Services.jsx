@@ -31,7 +31,7 @@ const cards = [
 
 const Services = () => {
   return (
-    <section id='services' className="relative min-h-screen w-full py-6 sm:py-10 overflow-hidden">
+    <section id='services' className="relative min-h-screen w-full py-6 sm:py-10 overflow-hidden lg:mt-24">
       <div className='absolute bottom-0 w-full z-0'>
         <img src={frame33} alt="" className='w-full h-auto' />
       </div>

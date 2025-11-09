@@ -8,7 +8,7 @@ import vector3 from '../../assets/common/Vector (3).svg'
 
 const AboutTeam = () => {
   return (
-    <section className="min-h-screen w-full overflow-hidden">
+    <section className="min-h-screen lg:max-h-screen w-full overflow-hidden">
       <div className="grid grid-rows-2 md:grid-cols-5 gap-6 items-center pt-12 md:py-12">
 
         <div className="row-span-1 md:col-span-2 relative h-[640px] mx-6 md:mx-16">

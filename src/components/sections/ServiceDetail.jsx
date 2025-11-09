@@ -5,7 +5,7 @@ import { MdKeyboardArrowLeft } from 'react-icons/md'
 
 const ServiceDetail = () => {
     return (
-        <div className="w-full">
+        <div className="w-full lg:mt-24">
             {servicesData.map((service, index) => (
                 <section
                     key={service.id}
