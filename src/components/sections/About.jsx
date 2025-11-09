@@ -1,7 +1,6 @@
 import group10 from '../../assets/common/Group 10.svg'
 import objects from '../../assets/common/OBJECTS.svg'
-import cardBg from '../../assets/common/cardBg.png'
-
+import cardBg from '../../assets/common/cardbg.png'
 
 const card = [
   {
